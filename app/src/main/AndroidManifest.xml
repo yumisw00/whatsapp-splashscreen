@@ -13,6 +13,7 @@
         android:theme="@style/Theme.WhatsappSplashScreen">
         <activity
             android:name=".MainActivity"
+            android:theme="@style/Theme.App.SplashScreenBackground"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>

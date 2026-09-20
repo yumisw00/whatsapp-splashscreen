@@ -2,6 +2,15 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.WhatsappSplashScreen" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorOnPrimary">@color/green</item>
+        <item name="android:statusBarColor">@color/green</item>
+    </style>
+
+    <style name="Theme.WhatsappSplashScreen" parent="Base.Theme.WhatsappSplashScreen" />
+    <style name="Theme.App.SplashScreenBackground" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/green</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/whatsapp_logo</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.WhatsappSplashScreen</item>
     </style>
 </resources>
