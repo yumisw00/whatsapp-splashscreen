@@ -3,16 +3,15 @@ plugins {
 }
 
 android {
-    namespace = "com.whatsapp.splashscreen"
+    namespace = "com.showcase.allinone"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.whatsapp.splashscreen"
+        applicationId = "com.showcase.allinone"
         minSdk = 24
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -29,6 +28,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -37,8 +39,10 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
+    implementation("androidx.core:core-splashscreen:1.0.1")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    implementation("androidx.viewpager2:viewpager2:1.1.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
-    implementation("androidx.core:core-splashscreen:1.0.0")
 }
